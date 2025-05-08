@@ -1,0 +1,30 @@
+{
+  "name": "key2pub",
+  "version": "0.0.1",
+  "description": "Convert Taproot private keys to public keys",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "key2pub": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "*.js",
+    "*.html",
+    "*.css"
+  ],
+  "keywords": [
+    "bitcoin",
+    "taproot",
+    "cryptography",
+    "keys"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "noble-secp256k1": "^1.2.14",
+    "commander": "^11.0.0"
+  }
+}

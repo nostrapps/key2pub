@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>key2pub - Taproot Private to Public Key Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>key2pub</h1>
+        <p>Convert Taproot private keys to public keys</p>
+      </header>
+
+      <main>
+        <div class="card">
+          <div class="form-group">
+            <label for="privateKey">Private Key (64-character hex):</label>
+            <input
+              type="text"
+              id="privateKey"
+              placeholder="Enter 64-character hex private key"
+              value="7e291b3901bc316ed86f6f5c213f9a296056aade6454400d03e86fd1237c8b7b"
+            />
+            <div class="buttons">
+              <button id="convertBtn">Convert to Public Key</button>
+              <button id="clearBtn">Clear</button>
+            </div>
+          </div>
+
+          <div class="result-group">
+            <label for="publicKey">Public Key:</label>
+            <input
+              type="text"
+              id="publicKey"
+              readonly
+              placeholder="Public key will appear here"
+            />
+            <button id="copyBtn" disabled>Copy to Clipboard</button>
+          </div>
+        </div>
+
+        <div class="examples">
+          <h3>Test Vector</h3>
+          <div class="example">
+            <div>
+              <strong>Private Key:</strong>
+              7e291b3901bc316ed86f6f5c213f9a296056aade6454400d03e86fd1237c8b7b
+            </div>
+            <div>
+              <strong>Public Key:</strong>
+              42a483df95b0fe6d2e6bac7ce53115322c8f77cf9c8a79d281f97c31203e9499
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          &copy; 2024 key2pub -
+          <a href="https://github.com/nostrapps/key2pub" target="_blank"
+            >GitHub</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
